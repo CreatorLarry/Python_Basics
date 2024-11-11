@@ -1,6 +1,17 @@
 # Error handling
-first_number = input("Enter first number: ")
+x = input("Enter first number: ")
 
-second_number = input("Enter second number: ")
+y = input("Enter second number: ")
 
-third_number = input("Enter third number: ")
+z = input("Enter third number: ")
+
+
+# try and catch
+try:
+    first_num = int(x)
+    second_num = int(y)
+    third_num = int(z)
+
+    print(first_num * second_num * third_num)
+except:
+    print("Enter valid numbers")
